@@ -1,24 +1,8 @@
 /* eslint-disable react/jsx-key */
-import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import defaultTeaImage from '../assets/teas.jpg';
 
-const request = 'https://boonakitea.cyclic.app/api/all';
-
-const TeaCard = () => {
-  const [data, setData] = useState(null);
-
-  let randomIndex = 27;
-  useEffect(() => {
-    async function getData() {
-      const response = await fetch(request);
-      const fetchedData = await response.json();
-      setData(fetchedData);
-      // randomIndex = Math.floor(Math.random * data.length);
-    }
-    getData();
-  }, []);
-
+const TeaCard = ({ teas, index }) => {
   const isImage = imageURL => {
     const brokenImage =
       'https://commons.wikimedia.org/wiki/File:Cup_of_black_tea.JPG#/media/File:Cup_of_black_tea.JPG';
@@ -30,44 +14,43 @@ const TeaCard = () => {
     ) {
       return defaultTeaImage;
     }
-    return data[randomIndex].image;
+    return teas[index].image;
   };
 
   return (
     <>
-      {data && (
+      {teas && (
         <Container className="bg-brown rounded-3 p-3">
           <Row>
             <Col>
-              <h1>{data[randomIndex].name}</h1>
+              <h1>{teas[index].name}</h1>
             </Col>
             <Col className="text-end">
-              <h2>Origin: {data[randomIndex].origin}</h2>
+              <h2>Origin: {teas[index].origin}</h2>
             </Col>
           </Row>
           <Row>
             <Col>
               <img
                 className="detail-img rounded-3 my-2 w-100"
-                src={isImage(data[randomIndex].image)}
+                src={isImage(teas[index].image)}
               />
             </Col>
             <Col className="mt-2 h5 align-self-center">
               <p>
-                <strong>Taste:</strong> {data[randomIndex].tasteDescription}
+                <strong>Taste:</strong> {teas[index].tasteDescription}
               </p>
               <p>
-                <strong>Description:</strong> {data[randomIndex].description}
+                <strong>Description:</strong> {teas[index].description}
               </p>
               <p>
-                <strong>Tea Type:</strong> {data[randomIndex].type}
+                <strong>Tea Type:</strong> {teas[index].type}
               </p>
               <p>
-                <strong>Caffeine Amount: </strong> {data[randomIndex].caffeine}
+                <strong>Caffeine Amount: </strong> {teas[index].caffeine}
               </p>
               <p>
-                <strong>Caffeine Level: </strong>{' '}
-                {data[randomIndex].caffeineLevel}
+                <strong>Caffeine Level: </strong> {teas[index].caffeineLevel}
               </p>
             </Col>
           </Row>
@@ -75,7 +58,7 @@ const TeaCard = () => {
             <Col>
               <strong>Sources:</strong>
               <ul>
-                {data[randomIndex].sources.map(source => {
+                {teas[index].sources.map(source => {
                   return (
                     <li>
                       <a href={source} target="_blank" rel="noreferrer">

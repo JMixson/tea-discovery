@@ -38,11 +38,13 @@ strong {
   font-weight: 700;
 }
 
-a:link {
+a:link,
+a:visited {
   color: var(--black);
   text-decoration: underline;
 }
-a:hover {
+a:hover,
+a:active {
   text-decoration: none;
 }
 

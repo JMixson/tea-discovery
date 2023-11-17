@@ -1,7 +1,7 @@
 import { Card, CardBody, CardTitle } from 'reactstrap';
 import defaultTeaImage from '../assets/teas.jpg';
 
-const TeaCard = ({ tea }) => {
+const TeaCard = ({ tea, key }) => {
   const { image, name } = tea;
 
   const isImage = imageURL => {
@@ -19,7 +19,7 @@ const TeaCard = ({ tea }) => {
   };
 
   return (
-    <Card className="my-2">
+    <Card key={key} className="my-2">
       <img className="card-img" src={`${isImage(image)}`} />
       <CardBody className="py-2 text-bg-secondary">
         <CardTitle tag="h4">{name}</CardTitle>

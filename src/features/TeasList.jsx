@@ -9,8 +9,8 @@ const TeasList = ({ teas }) => {
         {teas &&
           teas.map((tea, key) => {
             return (
-              <Col key={key}>
-                <TeaCard tea={tea} />
+              <Col>
+                <TeaCard tea={tea} key={key} />
               </Col>
             );
           })}

@@ -2,7 +2,7 @@
 import { Container, Row, Col } from 'reactstrap';
 import defaultTeaImage from '../assets/teas.jpg';
 
-const TeaCard = ({ teas, index }) => {
+const TeaDetail = ({ teas, index }) => {
   const isImage = imageURL => {
     const brokenImage =
       'https://commons.wikimedia.org/wiki/File:Cup_of_black_tea.JPG#/media/File:Cup_of_black_tea.JPG';
@@ -80,4 +80,4 @@ const TeaCard = ({ teas, index }) => {
   );
 };
 
-export default TeaCard;
+export default TeaDetail;

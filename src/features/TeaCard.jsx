@@ -1,7 +1,8 @@
 import { Card, CardBody, CardTitle } from 'reactstrap';
 import defaultTeaImage from '../assets/teas.jpg';
+import { Link } from 'react-router-dom';
 
-const TeaCard = ({ tea, key }) => {
+const TeaCard = ({ tea, teaIndex }) => {
   const { image, name } = tea;
 
   const isImage = imageURL => {
@@ -19,11 +20,13 @@ const TeaCard = ({ tea, key }) => {
   };
 
   return (
-    <Card key={key} className="my-2">
-      <img className="card-img" src={`${isImage(image)}`} />
-      <CardBody className="py-2 text-bg-secondary">
-        <CardTitle tag="h4">{name}</CardTitle>
-      </CardBody>
+    <Card key={teaIndex} className="my-2">
+      <Link to={`/${teaIndex}`}>
+        <img className="card-img" src={`${isImage(image)}`} />
+        <CardBody className="py-2 text-bg-secondary">
+          <CardTitle tag="h4">{name}</CardTitle>
+        </CardBody>
+      </Link>
     </Card>
   );
 };

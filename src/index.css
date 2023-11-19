@@ -81,3 +81,8 @@ img {
 .card-body {
   border-radius: 0 0 5px 5px;
 }
+
+.card a:link,
+.card a:visited {
+  text-decoration: none;
+}

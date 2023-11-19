@@ -20,7 +20,7 @@ const TeaDetail = ({ teas, index }) => {
   return (
     <>
       {teas && (
-        <Container className="bg-brown rounded-3 p-3">
+        <Container className="bg-brown rounded-3 p-3 mb-2">
           <Row>
             <Col>
               <h1>{teas[index].name}</h1>

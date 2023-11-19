@@ -1,6 +1,6 @@
 # Tea Discovery App
 
-A web app that allows users to discover and learn more about different types of tea.
+A web app that allows users to discover and learn more about different types of tea. Tea information provided by [Boonaki's Tea API](https://boonakitea.cyclic.app/).
 
 ![Alt text](screenshot.png)
 

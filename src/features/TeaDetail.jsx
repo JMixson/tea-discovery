@@ -69,10 +69,6 @@ const TeaDetail = ({ teas, index }) => {
                 })}
               </ul>
             </Col>
-            <Col className="align-self-end text-end">
-              <strong>More Details </strong>
-              <i className="fa fa-arrow-right"></i>
-            </Col>
           </Row>
         </Container>
       )}

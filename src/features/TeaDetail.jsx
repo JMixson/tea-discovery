@@ -22,15 +22,15 @@ const TeaDetail = ({ teas, index }) => {
     <>
       {teas && (
         <Container className="bg-brown rounded-3 p-3 mb-2">
-          <Row>
+          <Row xs="1" sm="2">
             <Col>
               <h1>{teas[index].name}</h1>
             </Col>
-            <Col className="text-end">
+            <Col className="text-sm-end">
               <h2>Origin: {teas[index].origin}</h2>
             </Col>
           </Row>
-          <Row>
+          <Row xs="1" sm="2">
             <Col>
               <img
                 className="detail-img rounded-3 my-2 w-100"

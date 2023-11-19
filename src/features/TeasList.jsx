@@ -6,7 +6,7 @@ const TeasList = ({ teas }) => {
   let teaIndex = -1;
 
   return (
-    <Row sm="2" lg="3">
+    <Row xs="1" sm="2" lg="3">
       {teas &&
         teas.map(tea => {
           teaIndex++;

@@ -3,14 +3,17 @@ import { Container, Row, Col } from 'reactstrap';
 import TeaCard from './TeaCard';
 
 const TeasList = ({ teas }) => {
+  let teaIndex = -1;
+
   return (
     <Container>
       <Row sm="2" lg="3">
         {teas &&
-          teas.map((tea, key) => {
+          teas.map(tea => {
+            teaIndex++;
             return (
               <Col>
-                <TeaCard tea={tea} key={key} />
+                <TeaCard tea={tea} key={teaIndex} teaIndex={teaIndex} />
               </Col>
             );
           })}

@@ -8,7 +8,7 @@ const request = 'https://boonakitea.cyclic.app/api/all';
 
 function HomePage() {
   const [teas, setTeas] = useState(null);
-  const [randomIndex, setRandomIndex] = useState(0);
+  const [teaIndex, setTeaIndex] = useState(0);
   const { index } = useParams();
 
   useEffect(() => {
@@ -22,17 +22,17 @@ function HomePage() {
 
   useEffect(() => {
     if (index) {
-      setRandomIndex(index);
+      setTeaIndex(index);
     }
   }, [index]);
 
   function getRandomIndex() {
-    setRandomIndex(Math.floor(Math.random() * 42));
+    setTeaIndex(Math.floor(Math.random() * 42));
   }
 
   return (
     <Container className="my-5">
-      <TeaDetail teas={teas} index={randomIndex} />
+      <TeaDetail teas={teas} index={teaIndex} />
 
       <div className="d-flex">
         <Button onClick={getRandomIndex} className="my-4 mx-auto py-2 border-0">

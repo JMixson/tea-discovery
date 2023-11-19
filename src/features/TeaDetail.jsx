@@ -74,23 +74,29 @@ const TeaDetail = ({ teas, index }) => {
           </Row>
           <Row>
             <Col>
-              {teas[index].sources ||
-                (teas[index].sources === '' && (
-                  <>
-                    <strong>Sources:</strong>
-                    <ul>
-                      {teas[index].sources.map(source => {
-                        return (
-                          <li>
-                            <a href={source} target="_blank" rel="noreferrer">
-                              {source}
-                            </a>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  </>
-                ))}
+              <strong>Sources:</strong>
+              {teas[index].sources && (
+                <ul>
+                  {teas[index].sources.map(source => {
+                    if (source === '') {
+                      return <li>No listed sources</li>;
+                    }
+                    return (
+                      <li>
+                        <a href={source} target="_blank" rel="noreferrer">
+                          {source}
+                        </a>
+                      </li>
+                    );
+                  })}
+                </ul>
+              )}
+
+              {!teas[index].sources && (
+                <ul>
+                  <li>No listed sources</li>
+                </ul>
+              )}
             </Col>
           </Row>
         </Container>

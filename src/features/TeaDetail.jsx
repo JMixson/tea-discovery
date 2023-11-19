@@ -71,7 +71,7 @@ const TeaDetail = ({ teas, index }) => {
           <Row>
             <Col>
               {teas[index].sources ||
-                (teas[index].sources == '' && (
+                (teas[index].sources === '' && (
                   <>
                     <strong>Sources:</strong>
                     <ul>

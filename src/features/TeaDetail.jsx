@@ -37,37 +37,55 @@ const TeaDetail = ({ teas, index }) => {
               />
             </Col>
             <Col className="mt-2 h5 align-self-center">
-              <p>
-                <strong>Taste:</strong> {teas[index].tasteDescription}
-              </p>
-              <p>
-                <strong>Description:</strong> {teas[index].description}
-              </p>
-              <p>
-                <strong>Tea Type:</strong> {teas[index].type}
-              </p>
-              <p>
-                <strong>Caffeine Amount: </strong> {teas[index].caffeine}
-              </p>
-              <p>
-                <strong>Caffeine Level: </strong> {teas[index].caffeineLevel}
-              </p>
+              {teas[index].tasteDescription && (
+                <p>
+                  <strong>Taste:</strong> {teas[index].tasteDescription}
+                </p>
+              )}
+
+              {teas[index].description && (
+                <p>
+                  <strong>Description:</strong> {teas[index].description}
+                </p>
+              )}
+
+              {teas[index].type && (
+                <p>
+                  <strong>Tea Type:</strong> {teas[index].type}
+                </p>
+              )}
+
+              {teas[index].caffeine && (
+                <p>
+                  <strong>Caffeine Amount: </strong> {teas[index].caffeine}
+                </p>
+              )}
+
+              {teas[index].caffeineLevel && (
+                <p>
+                  <strong>Caffeine Level: </strong> {teas[index].caffeineLevel}
+                </p>
+              )}
             </Col>
           </Row>
           <Row>
             <Col>
-              <strong>Sources:</strong>
-              <ul>
-                {teas[index].sources.map(source => {
-                  return (
-                    <li>
-                      <a href={source} target="_blank" rel="noreferrer">
-                        {source}
-                      </a>
-                    </li>
-                  );
-                })}
-              </ul>
+              {teas[index].sources && (
+                <>
+                  <strong>Sources:</strong>
+                  <ul>
+                    {teas[index].sources.map(source => {
+                      return (
+                        <li>
+                          <a href={source} target="_blank" rel="noreferrer">
+                            {source}
+                          </a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </>
+              )}
             </Col>
           </Row>
         </Container>

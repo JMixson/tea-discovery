@@ -2,12 +2,14 @@ import { useState, useEffect } from 'react';
 import { Container, Button } from 'reactstrap';
 import TeasList from '../features/TeasList';
 import TeaDetail from '../features/TeaDetail';
+import { useParams } from 'react-router-dom';
 
 const request = 'https://boonakitea.cyclic.app/api/all';
 
 function HomePage() {
   const [teas, setTeas] = useState(null);
   const [randomIndex, setRandomIndex] = useState(0);
+  const { index } = useParams();
 
   useEffect(() => {
     async function getData() {
@@ -17,6 +19,12 @@ function HomePage() {
     }
     getData();
   }, []);
+
+  useEffect(() => {
+    if (index) {
+      setRandomIndex(index);
+    }
+  }, [index]);
 
   function getRandomIndex() {
     setRandomIndex(Math.floor(Math.random() * 42));

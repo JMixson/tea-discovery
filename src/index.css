@@ -86,3 +86,7 @@ img {
 .card a:visited {
   text-decoration: none;
 }
+
+.extra-padding {
+  padding: 100px;
+}

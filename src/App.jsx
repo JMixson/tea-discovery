@@ -1,12 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
-import TeaDetailPage from './pages/TeaDetailPage';
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/:index" element={<TeaDetailPage />} />
+      <Route path="/:index" element={<HomePage />} />
       <Route path="*" element={<HomePage />} />
     </Routes>
   );

@@ -5,7 +5,7 @@ import App from './App.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
 import './index.css';
-import ScrollToTop from './components/scrollToTop.jsx';
+import ScrollToTop from './components/ScrollToTop.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

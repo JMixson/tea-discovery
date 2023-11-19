@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-key */
 import { Container, Row, Col } from 'reactstrap';
 import defaultTeaImage from '../assets/teas.jpg';
+import { capitalize } from '../util/formatData';
 
 const TeaDetail = ({ teas, index }) => {
   const isImage = imageURL => {
@@ -39,7 +40,8 @@ const TeaDetail = ({ teas, index }) => {
             <Col className="mt-2 h5 align-self-center">
               {teas[index].tasteDescription && (
                 <p>
-                  <strong>Taste:</strong> {teas[index].tasteDescription}
+                  <strong>Taste:</strong>{' '}
+                  {capitalize(teas[index].tasteDescription)}
                 </p>
               )}
 
@@ -51,19 +53,21 @@ const TeaDetail = ({ teas, index }) => {
 
               {teas[index].type && (
                 <p>
-                  <strong>Tea Type:</strong> {teas[index].type}
+                  <strong>Tea Type:</strong> {capitalize(teas[index].type)}
                 </p>
               )}
 
               {teas[index].caffeine && (
                 <p>
-                  <strong>Caffeine Amount: </strong> {teas[index].caffeine}
+                  <strong>Caffeine Amount: </strong>{' '}
+                  {capitalize(teas[index].caffeine)}
                 </p>
               )}
 
               {teas[index].caffeineLevel && (
                 <p>
-                  <strong>Caffeine Level: </strong> {teas[index].caffeineLevel}
+                  <strong>Caffeine Level: </strong>{' '}
+                  {capitalize(teas[index].caffeineLevel)}
                 </p>
               )}
             </Col>

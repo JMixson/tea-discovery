@@ -1,25 +1,25 @@
 import { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Container, Button } from 'reactstrap';
 import TeasList from '../features/TeasList';
 import TeaDetail from '../features/TeaDetail';
 import { useParams } from 'react-router-dom';
-
-const request = 'https://boonakitea.cyclic.app/api/all';
+import { fetchTeas, selectAllTeas } from '../features/teasSlice';
 
 function HomePage() {
-  const [teas, setTeas] = useState(null);
-  const [teaIndex, setTeaIndex] = useState(0);
-  const [isDisplayingTea, setIsDisplayingTea] = useState(false);
   const { index } = useParams();
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    async function getData() {
-      const response = await fetch(request);
-      const fetchedTeas = await response.json();
-      setTeas(fetchedTeas);
-    }
-    getData();
-  }, []);
+    dispatch(fetchTeas());
+  }, [dispatch]);
+
+  const teas = useSelector(selectAllTeas);
+  const isLoading = useSelector(state => state.teas.isLoading);
+  const errMsg = useSelector(state => state.teas.errMsg);
+
+  const [teaIndex, setTeaIndex] = useState(0);
+  const [isDisplayingTea, setIsDisplayingTea] = useState(false);
 
   useEffect(() => {
     if (index) {
@@ -29,7 +29,7 @@ function HomePage() {
   }, [index]);
 
   function getRandomIndex() {
-    setTeaIndex(Math.floor(Math.random() * 42));
+    setTeaIndex(Math.floor(Math.random() * teas.length));
     setIsDisplayingTea(true);
   }
 

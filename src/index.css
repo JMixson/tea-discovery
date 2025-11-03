@@ -1,3 +1,5 @@
+@import 'tailwindcss';
+
 :root {
   --red: oklch(63.981% 0.1366 29.108);
   --light-blue: oklch(96.573% 0.00524 248.358);

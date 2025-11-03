@@ -1,0 +1,92 @@
+:root {
+  --red: oklch(63.981% 0.1366 29.108);
+  --light-blue: oklch(96.573% 0.00524 248.358);
+  --dark-blue: oklch(44.085% 0.03858 239.15);
+  --brown: oklch(78.065% 0.05983 76.093);
+  --white: oklch(100% 0.00011 271.152);
+  --black: oklch(32.897% 0.00004 271.152);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--black);
+  background-color: var(--light-blue);
+}
+
+h1,
+h2,
+strong {
+  font-weight: 700;
+}
+
+a:link,
+a:visited {
+  color: var(--black);
+  text-decoration: underline;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.detail-img,
+.card-img {
+  object-fit: cover;
+  height: 350px;
+}
+
+.card-img {
+  border-radius: 5px 5px 0 0;
+}
+
+.bg-brown {
+  background-color: var(--brown);
+}
+
+.btn {
+  background-color: var(--red);
+  font-weight: 700;
+  font-size: 1.25rem;
+  transition: background-color 300ms ease;
+}
+
+.btn:hover {
+  background-color: var(--dark-blue);
+}
+
+.card-body {
+  border-radius: 0 0 5px 5px;
+}
+
+.card a:link,
+.card a:visited {
+  text-decoration: none;
+}
+
+.extra-padding {
+  padding: 100px;
+}

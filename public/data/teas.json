@@ -12,7 +12,7 @@
     "description": "A tea blend flavoured with oil of bergamot, creating a distinctive citrus aroma",
     "colorDescription": "amber, deep orange",
     "tasteDescription": "citrus, floral, slightly bitter, bergamot, malty",
-    "sources": "https://en.wikipedia.org/wiki/Earl_Grey_tea"
+    "source": "https://en.wikipedia.org/wiki/Earl_Grey_tea"
   },
   {
     "id": "sencha",
@@ -27,7 +27,7 @@
     "description": "Japan's most popular tea, steamed green tea leaves rolled into needle-like shapes",
     "colorDescription": "greenish-golden, pale yellow-green",
     "tasteDescription": "grassy, vegetal, sweet, umami, oceanic, slightly astringent",
-    "sources": "https://en.wikipedia.org/wiki/Sencha"
+    "source": "https://en.wikipedia.org/wiki/Sencha"
   },
   {
     "id": "matcha",
@@ -42,7 +42,7 @@
     "description": "Finely ground powder of shade-grown green tea leaves, the entire leaf is consumed",
     "colorDescription": "vibrant green, jade",
     "tasteDescription": "umami, vegetal, creamy, sweet, slightly bitter, rich",
-    "sources": "https://en.wikipedia.org/wiki/Matcha"
+    "source": "https://en.wikipedia.org/wiki/Matcha"
   },
   {
     "id": "assam",
@@ -57,7 +57,7 @@
     "description": "A robust black tea from the Assam region, known for its bold, malty character",
     "colorDescription": "deep red, reddish-brown, amber",
     "tasteDescription": "malty, bold, brisk, slightly sweet, full-bodied",
-    "sources": "https://en.wikipedia.org/wiki/Assam_tea"
+    "source": "https://en.wikipedia.org/wiki/Assam_tea"
   },
   {
     "id": "darjeeling",
@@ -72,7 +72,7 @@
     "description": "A delicate black tea from the Darjeeling region with distinctive muscatel notes",
     "colorDescription": "golden, light amber, bright",
     "tasteDescription": "floral, muscatel, fruity, delicate, slightly astringent",
-    "sources": "https://en.wikipedia.org/wiki/Darjeeling_tea"
+    "source": "https://en.wikipedia.org/wiki/Darjeeling_tea"
   },
   {
     "id": "ceylon",
@@ -87,7 +87,7 @@
     "description": "A black tea from Sri Lanka with a crisp, lively character and bright flavor",
     "colorDescription": "bright amber, copper, golden",
     "tasteDescription": "citrusy, brisk, bold, slightly spicy, clean",
-    "sources": "https://en.wikipedia.org/wiki/Ceylon_tea"
+    "source": "https://en.wikipedia.org/wiki/Ceylon_tea"
   },
   {
     "id": "oolong",
@@ -102,7 +102,7 @@
     "description": "A traditional Chinese tea that is partially oxidized, between green and black tea",
     "colorDescription": "golden yellow, amber, light brown",
     "tasteDescription": "floral, fruity, creamy, smooth, complex, honey",
-    "sources": "https://en.wikipedia.org/wiki/Oolong"
+    "source": "https://en.wikipedia.org/wiki/Oolong"
   },
   {
     "id": "tieguanyin",
@@ -117,7 +117,7 @@
     "description": "A premium Chinese oolong tea with a distinctive orchid fragrance and smooth taste",
     "colorDescription": "pale yellow, greenish-gold, clear",
     "tasteDescription": "orchid, floral, creamy, buttery, sweet, smooth",
-    "sources": "https://en.wikipedia.org/wiki/Tieguanyin"
+    "source": "https://en.wikipedia.org/wiki/Tieguanyin"
   },
   {
     "id": "genmaicha",
@@ -132,7 +132,7 @@
     "description": "Japanese green tea mixed with roasted brown rice, creating a unique nutty flavor",
     "colorDescription": "light yellow, pale gold, clear",
     "tasteDescription": "nutty, toasty, mild, warm, slightly sweet",
-    "sources": "https://en.wikipedia.org/wiki/Genmaicha"
+    "source": "https://en.wikipedia.org/wiki/Genmaicha"
   },
   {
     "id": "jasmine",
@@ -147,7 +147,7 @@
     "description": "Tea scented with the aroma of jasmine blossoms, typically using green or white tea base",
     "colorDescription": "pale yellow, light green, clear",
     "tasteDescription": "floral, sweet, fragrant, delicate, aromatic",
-    "sources": "https://en.wikipedia.org/wiki/Jasmine_tea"
+    "source": "https://en.wikipedia.org/wiki/Jasmine_tea"
   },
   {
     "id": "chamomile",
@@ -162,7 +162,7 @@
     "description": "A caffeine-free herbal infusion made from dried chamomile flowers, known for calming properties",
     "colorDescription": "pale yellow, golden, light straw",
     "tasteDescription": "apple-like, floral, honey, mild, soothing, sweet",
-    "sources": "https://en.wikipedia.org/wiki/Chamomile"
+    "source": "https://en.wikipedia.org/wiki/Chamomile"
   },
   {
     "id": "peppermint",
@@ -177,7 +177,7 @@
     "description": "A refreshing herbal tea made from peppermint leaves with cooling properties",
     "colorDescription": "pale green, light yellow, clear",
     "tasteDescription": "minty, cooling, fresh, crisp, invigorating",
-    "sources": "https://en.wikipedia.org/wiki/Peppermint_tea"
+    "source": "https://en.wikipedia.org/wiki/Peppermint_tea"
   },
   {
     "id": "rooibos",
@@ -192,7 +192,7 @@
     "description": "A naturally sweet, caffeine-free herbal tea from South Africa with a red color",
     "colorDescription": "deep red, reddish-brown, burgundy",
     "tasteDescription": "sweet, nutty, woody, earthy, smooth",
-    "sources": "https://en.wikipedia.org/wiki/Rooibos"
+    "source": "https://en.wikipedia.org/wiki/Rooibos"
   },
   {
     "id": "gyokuro",
@@ -207,7 +207,7 @@
     "description": "Japan's highest-grade green tea, shaded for 20+ days before harvest for intense umami",
     "colorDescription": "deep green, dark jade, rich",
     "tasteDescription": "intense umami, sweet, savory, rich, brothy, seaweed",
-    "sources": "https://en.wikipedia.org/wiki/Gyokuro"
+    "source": "https://en.wikipedia.org/wiki/Gyokuro"
   },
   {
     "id": "puerh",
@@ -222,7 +222,7 @@
     "description": "A post-fermented tea from Yunnan that can be aged for years, often pressed into cakes",
     "colorDescription": "deep brown, dark red, black",
     "tasteDescription": "earthy, woody, smooth, mellow, slightly sweet",
-    "sources": "https://en.wikipedia.org/wiki/Pu%27er_tea"
+    "source": "https://en.wikipedia.org/wiki/Pu%27er_tea"
   },
   {
     "id": "whitepeony",
@@ -237,7 +237,7 @@
     "description": "A delicate white tea made from young leaves and buds with minimal processing",
     "colorDescription": "pale yellow, light gold, champagne",
     "tasteDescription": "floral, sweet, delicate, light, subtle, honey",
-    "sources": "https://en.wikipedia.org/wiki/White_tea"
+    "source": "https://en.wikipedia.org/wiki/White_tea"
   },
   {
     "id": "silverneedle",
@@ -252,7 +252,7 @@
     "description": "The most prized white tea, made only from unopened buds covered in white downy hair",
     "colorDescription": "pale yellow, silvery, very light",
     "tasteDescription": "sweet, delicate, subtle, smooth, hay-like, floral",
-    "sources": "https://en.wikipedia.org/wiki/Baihao_Yinzhen"
+    "source": "https://en.wikipedia.org/wiki/Baihao_Yinzhen"
   },
   {
     "id": "longjing",
@@ -267,7 +267,7 @@
     "description": "Famous Chinese green tea with distinctive flat leaves, pan-roasted for a sweet, mellow flavor",
     "colorDescription": "light yellow-green, jade, clear",
     "tasteDescription": "sweet, mellow, chestnut-like, smooth, vegetal",
-    "sources": "https://en.wikipedia.org/wiki/Longjing_tea"
+    "source": "https://en.wikipedia.org/wiki/Longjing_tea"
   },
   {
     "id": "hojicha",
@@ -282,7 +282,7 @@
     "description": "A roasted Japanese green tea with a reddish-brown color and toasty, caramel-like flavor",
     "colorDescription": "reddish-brown, amber, light brown",
     "tasteDescription": "roasted, toasty, caramel, nutty, smooth, mild",
-    "sources": "https://en.wikipedia.org/wiki/H%C5%8Djicha"
+    "source": "https://en.wikipedia.org/wiki/H%C5%8Djicha"
   },
   {
     "id": "lapsangsouchong",
@@ -297,7 +297,7 @@
     "description": "A distinctive black tea dried over pine wood fires, giving it an intense smoky flavor",
     "colorDescription": "deep red, dark amber, reddish-brown",
     "tasteDescription": "smoky, woody, pine, bold, intense, tarry",
-    "sources": "https://en.wikipedia.org/wiki/Lapsang_souchong"
+    "source": "https://en.wikipedia.org/wiki/Lapsang_souchong"
   },
   {
     "id": "keemun",
@@ -312,7 +312,7 @@
     "description": "A famous Chinese black tea known for its wine-like and fruity character",
     "colorDescription": "bright red, burgundy, clear",
     "tasteDescription": "fruity, wine-like, slightly smoky, sweet, complex",
-    "sources": "https://en.wikipedia.org/wiki/Keemun"
+    "source": "https://en.wikipedia.org/wiki/Keemun"
   },
   {
     "id": "yunnanblack",
@@ -327,7 +327,7 @@
     "description": "A Chinese black tea from Yunnan province with golden tips and a sweet, peppery flavor",
     "colorDescription": "bright red, golden-orange, amber",
     "tasteDescription": "sweet, malty, peppery, smooth, honey, slightly spicy",
-    "sources": "https://en.wikipedia.org/wiki/Dianhong"
+    "source": "https://en.wikipedia.org/wiki/Dianhong"
   },
   {
     "id": "gunpowder",
@@ -342,7 +342,7 @@
     "description": "Chinese green tea with leaves rolled into small pellets resembling gunpowder",
     "colorDescription": "yellow-green, golden, bright",
     "tasteDescription": "bold, slightly smoky, grassy, thick, robust",
-    "sources": "https://en.wikipedia.org/wiki/Gunpowder_tea"
+    "source": "https://en.wikipedia.org/wiki/Gunpowder_tea"
   },
   {
     "id": "chailatte",
@@ -357,7 +357,7 @@
     "description": "A spiced tea blend originating from India, typically made with black tea, spices, milk and sugar",
     "colorDescription": "milky brown, creamy tan, light brown",
     "tasteDescription": "spicy, sweet, warming, cinnamon, cardamom, ginger, clove",
-    "sources": "https://en.wikipedia.org/wiki/Masala_chai"
+    "source": "https://en.wikipedia.org/wiki/Masala_chai"
   },
   {
     "id": "hibiscus",
@@ -372,7 +372,7 @@
     "description": "A tart, cranberry-like herbal tea made from dried hibiscus flowers, rich in vitamin C",
     "colorDescription": "deep red, magenta, ruby",
     "tasteDescription": "tart, cranberry-like, fruity, tangy, slightly sweet",
-    "sources": "https://en.wikipedia.org/wiki/Hibiscus_tea"
+    "source": "https://en.wikipedia.org/wiki/Hibiscus_tea"
   },
   {
     "id": "biluochun",
@@ -387,7 +387,7 @@
     "description": "A famous Chinese green tea with tightly rolled leaves and a delicate, fruity flavor",
     "colorDescription": "pale green, clear, jade-like",
     "tasteDescription": "floral, fruity, delicate, sweet, fresh",
-    "sources": "https://en.wikipedia.org/wiki/Biluochun"
+    "source": "https://en.wikipedia.org/wiki/Biluochun"
   },
   {
     "id": "lavender",
@@ -402,7 +402,7 @@
     "description": "A soothing herbal tea made from lavender flowers, known for its calming properties",
     "colorDescription": "pale purple, light lavender, clear",
     "tasteDescription": "floral, perfumy, sweet, aromatic, calming",
-    "sources": "https://en.wikipedia.org/wiki/Lavandula"
+    "source": "https://en.wikipedia.org/wiki/Lavandula"
   },
   {
     "id": "yerba",
@@ -417,7 +417,7 @@
     "description": "A caffeinated South American herbal tea made from the leaves of the yerba mate plant",
     "colorDescription": "green-yellow, olive, greenish",
     "tasteDescription": "earthy, grassy, slightly bitter, vegetal, robust",
-    "sources": "https://en.wikipedia.org/wiki/Yerba_mate"
+    "source": "https://en.wikipedia.org/wiki/Yerba_mate"
   },
   {
     "id": "oolongtieguanyin",
@@ -432,7 +432,7 @@
     "description": "A highly prized Wuyi rock oolong tea with a rich, roasted flavor and mineral notes",
     "colorDescription": "deep amber, reddish-brown, bright",
     "tasteDescription": "roasted, mineral, sweet, complex, woody, fruity",
-    "sources": "https://en.wikipedia.org/wiki/Da_Hong_Pao"
+    "source": "https://en.wikipedia.org/wiki/Da_Hong_Pao"
   },
   {
     "id": "nilgiri",
@@ -447,7 +447,7 @@
     "description": "A South Indian black tea from the Nilgiri mountains with a smooth, fragrant character",
     "colorDescription": "bright amber, golden-red, clear",
     "tasteDescription": "fruity, floral, bright, smooth, brisk",
-    "sources": "https://en.wikipedia.org/wiki/Nilgiri_tea"
+    "source": "https://en.wikipedia.org/wiki/Nilgiri_tea"
   },
   {
     "id": "englishbreakfast",
@@ -462,7 +462,7 @@
     "description": "A traditional breakfast tea blend of robust black teas, typically from Assam, Ceylon and Kenya",
     "colorDescription": "deep red, dark amber, rich",
     "tasteDescription": "full-bodied, robust, malty, slightly sweet, strong",
-    "sources": "https://en.wikipedia.org/wiki/English_breakfast_tea"
+    "source": "https://en.wikipedia.org/wiki/English_breakfast_tea"
   },
   {
     "id": "irishshbreakfast",
@@ -477,7 +477,7 @@
     "description": "A stronger breakfast blend than English Breakfast, typically Assam-heavy for a robust cup",
     "colorDescription": "deep reddish-brown, dark amber, rich",
     "tasteDescription": "strong, malty, robust, full-bodied, brisk",
-    "sources": "https://en.wikipedia.org/wiki/Irish_breakfast_tea"
+    "source": "https://en.wikipedia.org/wiki/Irish_breakfast_tea"
   },
   {
     "id": "moroccanmint",
@@ -492,7 +492,7 @@
     "description": "A traditional North African tea blend of green tea and fresh mint, served very sweet",
     "colorDescription": "pale green, light yellow, clear",
     "tasteDescription": "minty, sweet, refreshing, clean, invigorating",
-    "sources": "https://en.wikipedia.org/wiki/Maghrebi_mint_tea"
+    "source": "https://en.wikipedia.org/wiki/Maghrebi_mint_tea"
   },
   {
     "id": "ginger",
@@ -507,7 +507,7 @@
     "description": "A warming herbal infusion made from fresh or dried ginger root with digestive benefits",
     "colorDescription": "pale yellow, light gold, clear",
     "tasteDescription": "spicy, warming, pungent, sharp, zesty",
-    "sources": "https://en.wikipedia.org/wiki/Ginger_tea"
+    "source": "https://en.wikipedia.org/wiki/Ginger_tea"
   },
   {
     "id": "turmeric",
@@ -522,7 +522,7 @@
     "description": "A golden herbal infusion made from turmeric root, known for anti-inflammatory properties",
     "colorDescription": "bright yellow, golden, orange-yellow",
     "tasteDescription": "earthy, slightly bitter, warming, peppery, ginger-like",
-    "sources": "https://en.wikipedia.org/wiki/Turmeric"
+    "source": "https://en.wikipedia.org/wiki/Turmeric"
   },
   {
     "id": "lemonbalm",
@@ -537,7 +537,7 @@
     "description": "A calming herbal tea made from lemon balm leaves with a light citrus flavor",
     "colorDescription": "pale yellow, light green, clear",
     "tasteDescription": "lemony, mild, refreshing, slightly minty, soothing",
-    "sources": "https://en.wikipedia.org/wiki/Melissa_officinalis"
+    "source": "https://en.wikipedia.org/wiki/Melissa_officinalis"
   },
   {
     "id": "passionflower",
@@ -552,7 +552,7 @@
     "description": "A relaxing herbal tea made from passionflower, traditionally used for anxiety and sleep",
     "colorDescription": "light yellow, pale gold, clear",
     "tasteDescription": "mild, grassy, slightly floral, earthy",
-    "sources": "https://en.wikipedia.org/wiki/Passiflora"
+    "source": "https://en.wikipedia.org/wiki/Passiflora"
   },
   {
     "id": "valerian",
@@ -567,7 +567,7 @@
     "description": "A potent herbal tea made from valerian root, commonly used as a sleep aid",
     "colorDescription": "brownish, amber, murky",
     "tasteDescription": "earthy, woody, pungent, bitter, strong",
-    "sources": "https://en.wikipedia.org/wiki/Valerian_(herb)"
+    "source": "https://en.wikipedia.org/wiki/Valerian_(herb)"
   },
   {
     "id": "echinacea",
@@ -582,7 +582,7 @@
     "description": "An herbal tea made from echinacea plant, traditionally used to support immune health",
     "colorDescription": "pale yellow, light brown, clear",
     "tasteDescription": "earthy, slightly bitter, floral, herbal",
-    "sources": "https://en.wikipedia.org/wiki/Echinacea"
+    "source": "https://en.wikipedia.org/wiki/Echinacea"
   },
   {
     "id": "lemongrass",
@@ -597,7 +597,7 @@
     "description": "A refreshing herbal tea made from lemongrass with a bright citrus flavor",
     "colorDescription": "pale yellow, light green, clear",
     "tasteDescription": "citrusy, lemony, fresh, light, tangy",
-    "sources": "https://en.wikipedia.org/wiki/Cymbopogon"
+    "source": "https://en.wikipedia.org/wiki/Cymbopogon"
   },
   {
     "id": "dandelion",
@@ -612,7 +612,7 @@
     "description": "A bitter herbal tea made from roasted dandelion roots, sometimes used as a coffee substitute",
     "colorDescription": "amber, brown, dark gold",
     "tasteDescription": "earthy, bitter, slightly sweet, roasted, robust",
-    "sources": "https://en.wikipedia.org/wiki/Taraxacum"
+    "source": "https://en.wikipedia.org/wiki/Taraxacum"
   },
   {
     "id": "rosehip",
@@ -627,7 +627,7 @@
     "description": "A tart, vitamin C-rich herbal tea made from the fruit of rose plants",
     "colorDescription": "reddish-orange, pink-red, bright",
     "tasteDescription": "tart, fruity, slightly sweet, tangy, berry-like",
-    "sources": "https://en.wikipedia.org/wiki/Rose_hip"
+    "source": "https://en.wikipedia.org/wiki/Rose_hip"
   },
   {
     "id": "oolongmilk",
@@ -642,7 +642,7 @@
     "description": "A Taiwanese oolong with a naturally creamy, buttery flavor profile without added milk",
     "colorDescription": "pale gold, light yellow, clear",
     "tasteDescription": "creamy, buttery, smooth, sweet, milky, floral",
-    "sources": "https://en.wikipedia.org/wiki/Oolong"
+    "source": "https://en.wikipedia.org/wiki/Oolong"
   },
   {
     "id": "kuding",
@@ -657,7 +657,7 @@
     "description": "A bitter Chinese herbal tea made from holly leaves, traditionally used for medicinal purposes",
     "colorDescription": "yellow-green, pale green, clear",
     "tasteDescription": "very bitter, astringent, slightly sweet aftertaste",
-    "sources": "https://en.wikipedia.org/wiki/Kuding"
+    "source": "https://en.wikipedia.org/wiki/Kuding"
   },
   {
     "id": "buckwheat",
@@ -672,7 +672,7 @@
     "description": "A nutty, caffeine-free tea made from roasted buckwheat seeds, popular in Japan and Korea",
     "colorDescription": "golden yellow, light amber, clear",
     "tasteDescription": "nutty, toasty, slightly sweet, grain-like, mild",
-    "sources": "https://en.wikipedia.org/wiki/Buckwheat"
+    "source": "https://en.wikipedia.org/wiki/Buckwheat"
   },
   {
     "id": "chrysanthemum",
@@ -687,7 +687,7 @@
     "description": "A traditional Chinese herbal tea made from dried chrysanthemum flowers with cooling properties",
     "colorDescription": "pale yellow, light gold, clear",
     "tasteDescription": "floral, sweet, light, refreshing, slightly honey-like",
-    "sources": "https://en.wikipedia.org/wiki/Chrysanthemum_tea"
+    "source": "https://en.wikipedia.org/wiki/Chrysanthemum_tea"
   },
   {
     "id": "butterflypea",
@@ -702,7 +702,7 @@
     "description": "A striking blue herbal tea that changes color with pH, made from butterfly pea flowers",
     "colorDescription": "deep blue, purple-blue, violet",
     "tasteDescription": "mild, earthy, slightly floral, subtle, vegetal",
-    "sources": "https://en.wikipedia.org/wiki/Clitoria_ternatea"
+    "source": "https://en.wikipedia.org/wiki/Clitoria_ternatea"
   },
   {
     "id": "nettle",
@@ -717,7 +717,7 @@
     "description": "A nutrient-rich herbal tea made from dried nettle leaves, traditionally used for wellness",
     "colorDescription": "green-yellow, pale green, clear",
     "tasteDescription": "grassy, earthy, slightly bitter, vegetal",
-    "sources": "https://en.wikipedia.org/wiki/Urtica_dioica"
+    "source": "https://en.wikipedia.org/wiki/Urtica_dioica"
   },
   {
     "id": "licorice",
@@ -732,7 +732,7 @@
     "description": "A naturally sweet herbal tea made from licorice root, traditionally used for digestion",
     "colorDescription": "amber, brown, golden",
     "tasteDescription": "very sweet, licorice, anise-like, woody, bold",
-    "sources": "https://en.wikipedia.org/wiki/Liquorice"
+    "source": "https://en.wikipedia.org/wiki/Liquorice"
   },
   {
     "id": "fennel",
@@ -747,7 +747,7 @@
     "description": "A digestive herbal tea made from crushed fennel seeds with a sweet, anise-like flavor",
     "colorDescription": "pale yellow, light green, clear",
     "tasteDescription": "anise-like, sweet, licorice, aromatic, warming",
-    "sources": "https://en.wikipedia.org/wiki/Fennel"
+    "source": "https://en.wikipedia.org/wiki/Fennel"
   },
   {
     "id": "cardamom",
@@ -762,6 +762,6 @@
     "description": "An aromatic herbal tea made from cardamom pods, popular in Middle Eastern and Indian cultures",
     "colorDescription": "pale yellow, light amber, clear",
     "tasteDescription": "spicy, sweet, aromatic, warm, complex",
-    "sources": "https://en.wikipedia.org/wiki/Cardamom"
+    "source": "https://en.wikipedia.org/wiki/Cardamom"
   }
 ]

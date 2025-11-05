@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import StarterElement from "./components/StarterElement";
 import type { Tea } from "./types";
+import TeaCard from "./components/TeaCard";
 
 function App() {
   const {
@@ -22,18 +23,18 @@ function App() {
   if (error) return "An error has occurred: " + error.message;
 
   return (
-    <div className="mt-14 flex flex-col items-center">
+    <div className="my-14 flex flex-col items-center">
       <div className="bg-brown min-h-80 w-7xl content-center rounded-md">
         <StarterElement />
       </div>
 
       <button className="btn mx-auto">Discover a New Tea</button>
 
-      <div className="grid w-full grid-cols-3 place-items-center gap-3">
+      <section className="grid w-7xl grid-cols-4 place-items-center gap-5">
         {teas.map((tea: Tea) => (
-          <div key={tea.id}>{tea.name}</div>
+          <TeaCard key={tea.id} id={tea.id} name={tea.name} image={tea.image} />
         ))}
-      </div>
+      </section>
     </div>
   );
 }

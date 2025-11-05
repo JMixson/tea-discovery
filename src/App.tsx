@@ -1,8 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
 import StarterElement from "./components/StarterElement";
+import type { Tea } from "./types";
 
 function App() {
-  const { data, error, isLoading } = useQuery({
+  const {
+    data: teas,
+    error,
+    isLoading,
+  } = useQuery({
     queryKey: ["teaData"],
     queryFn: async () => {
       const response = await fetch(
@@ -25,12 +30,9 @@ function App() {
       <button className="btn mx-auto">Discover a New Tea</button>
 
       <div className="grid w-full grid-cols-3 place-items-center gap-3">
-        <div>word</div>
-        <div>word</div>
-        <div>word</div>
-        <div>word</div>
-        <div>word</div>
-        <div>word</div>
+        {teas.map((tea: Tea) => (
+          <div key={tea.id}>{tea.name}</div>
+        ))}
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { ChevronsDown } from "lucide-react";
+import StarterElement from "./components/StarterElement";
 
 function App() {
   const { data, error, isLoading } = useQuery({
@@ -19,14 +19,7 @@ function App() {
   return (
     <div className="mt-14 flex flex-col items-center">
       <div className="bg-brown min-h-80 w-7xl content-center rounded-md">
-        <h1 className="text-center text-4xl">
-          Discover a new taste with an exciting new tea!
-        </h1>
-        {/* <h2>{data}</h2> */}
-        <ChevronsDown
-          className="mx-auto mt-10 block animate-bounce"
-          size={48}
-        />
+        <StarterElement />
       </div>
 
       <button className="btn mx-auto">Discover a New Tea</button>

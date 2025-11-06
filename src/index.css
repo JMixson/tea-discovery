@@ -40,31 +40,6 @@ strong {
   font-weight: 700;
 }
 
-a:link,
-a:visited {
-  color: var(--black);
-  text-decoration: underline;
-}
-a:hover,
-a:active {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.detail-img,
-.card-img {
-  object-fit: cover;
-  height: 350px;
-}
-
-.card-img {
-  border-radius: 5px 5px 0 0;
-}
-
 .bg-brown {
   background-color: var(--brown);
 }
@@ -84,13 +59,4 @@ img {
 
 .btn:hover {
   background-color: var(--dark-blue);
-}
-
-.card-body {
-  border-radius: 0 0 5px 5px;
-}
-
-.card a:link,
-.card a:visited {
-  text-decoration: none;
 }

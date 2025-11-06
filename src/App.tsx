@@ -35,7 +35,7 @@ function App() {
           {(params) => {
             const tea = teas.find((tea: TeaDetails) => tea.id === params.id);
 
-            return <TeaInfoElement {...tea} />;
+            return <TeaInfoElement tea={tea} />;
           }}
         </Route>
       </div>

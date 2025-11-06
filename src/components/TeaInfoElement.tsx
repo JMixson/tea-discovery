@@ -1,4 +1,5 @@
 import type { TeaDetails } from "../types";
+import { capitalize } from "../util/formatText";
 
 function TeaInfoElement({ tea }: { tea: TeaDetails }) {
   return (
@@ -17,19 +18,20 @@ function TeaInfoElement({ tea }: { tea: TeaDetails }) {
           <strong>Description:</strong> {tea.description}
         </p>
         <p className="mb-2">
-          <strong>Taste:</strong> {tea.tasteDescription}
+          <strong>Taste:</strong> {capitalize(tea.tasteDescription)}
         </p>
         <p className="mb-2">
-          <strong>Tea Type:</strong> {tea.type}
+          <strong>Tea Type:</strong> {capitalize(tea.type)}
         </p>
         <p className="mb-2">
-          <strong>Caffeine Amount:</strong> {tea.caffeine} ({tea.caffeineLevel})
+          <strong>Caffeine Amount:</strong> {tea.caffeine} (
+          {capitalize(tea.caffeineLevel)})
         </p>
         <p className="mb-2">
-          <strong>Main Ingredients:</strong> {tea.mainIngredients}
+          <strong>Main Ingredients:</strong> {capitalize(tea.mainIngredients)}
         </p>
         <p className="mb-2">
-          <strong>Color:</strong> {tea.colorDescription}
+          <strong>Color:</strong> {capitalize(tea.colorDescription)}
         </p>
       </div>
 

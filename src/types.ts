@@ -16,5 +16,5 @@ export type TeaDetails = {
   description: string;
   colorDescription: string;
   tasteDescription: string;
-  sources: string;
+  source: string;
 };

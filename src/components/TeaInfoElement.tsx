@@ -1,10 +1,49 @@
 import type { TeaDetails } from "../types";
 
-function TeaInfoElement({ name, image }: TeaDetails) {
+function TeaInfoElement({ tea }: { tea: TeaDetails }) {
   return (
-    <div className="grid grid-cols-2">
-      <p>Tea Info: {name}</p>
-      <img className="h-64 rounded-md object-cover" src={image} alt={name} />
+    <div className="grid grid-cols-2 gap-3 p-4">
+      <h1 className="text-4xl">{tea.name}</h1>
+      <h2 className="justify-self-end text-2xl">Origin: {tea.origin}</h2>
+
+      <img
+        className="h-96 w-full rounded-md object-cover"
+        src={tea.image}
+        alt={tea.name}
+      />
+
+      <div className="self-center text-xl">
+        <p className="mb-2">
+          <strong>Description:</strong> {tea.description}
+        </p>
+        <p className="mb-2">
+          <strong>Taste:</strong> {tea.tasteDescription}
+        </p>
+        <p className="mb-2">
+          <strong>Tea Type:</strong> {tea.type}
+        </p>
+        <p className="mb-2">
+          <strong>Caffeine Amount:</strong> {tea.caffeine} ({tea.caffeineLevel})
+        </p>
+        <p className="mb-2">
+          <strong>Main Ingredients:</strong> {tea.mainIngredients}
+        </p>
+        <p className="mb-2">
+          <strong>Color:</strong> {tea.colorDescription}
+        </p>
+      </div>
+
+      <p>
+        <strong>Source:</strong>{" "}
+        <a
+          className="underline hover:no-underline"
+          href={tea.source}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {tea.source}
+        </a>
+      </p>
     </div>
   );
 }

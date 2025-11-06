@@ -1,7 +1,10 @@
+import { Route } from "wouter";
 import { useQuery } from "@tanstack/react-query";
+import type { Tea, TeaDetails } from "./types";
 import StarterElement from "./components/StarterElement";
-import type { Tea } from "./types";
+import TeaInfoElement from "./components/TeaInfoElement";
 import TeaCard from "./components/TeaCard";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const {
@@ -24,8 +27,17 @@ function App() {
 
   return (
     <div className="my-14 flex flex-col items-center">
+      <ScrollToTop />
       <div className="bg-brown min-h-80 w-7xl content-center rounded-md">
-        <StarterElement />
+        <Route path="/" component={StarterElement} />
+
+        <Route path="/tea/:id">
+          {(params) => {
+            const tea = teas.find((tea: TeaDetails) => tea.id === params.id);
+
+            return <TeaInfoElement tea={tea} />;
+          }}
+        </Route>
       </div>
 
       <button className="btn mx-auto">Discover a New Tea</button>

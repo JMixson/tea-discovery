@@ -9,6 +9,7 @@ export type TeaDetails = {
   name: string;
   image: string;
   type: string;
+  origin: string;
   caffeine: string;
   caffeineLevel: string;
   mainIngredients: string;

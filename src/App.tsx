@@ -4,6 +4,7 @@ import type { Tea, TeaDetails } from "./types";
 import StarterElement from "./components/StarterElement";
 import TeaInfoElement from "./components/TeaInfoElement";
 import TeaCard from "./components/TeaCard";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const {
@@ -26,6 +27,7 @@ function App() {
 
   return (
     <div className="my-14 flex flex-col items-center">
+      <ScrollToTop />
       <div className="bg-brown min-h-80 w-7xl content-center rounded-md">
         <Route path="/" component={StarterElement} />
 

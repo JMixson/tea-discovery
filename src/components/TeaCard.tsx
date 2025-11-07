@@ -9,6 +9,8 @@ function TeaCard({ id, name, image }: Tea) {
           className="h-64 w-full rounded-t-md object-cover"
           src={image}
           alt={name}
+          loading="lazy"
+          decoding="async"
         />
         <div className="p-4">
           <h3 className="text-center text-xl font-bold">{name}</h3>

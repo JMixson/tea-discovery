@@ -1,73 +1,62 @@
-# React + TypeScript + Vite
+# Tea Discovery App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web app that allows users to discover and learn more about different types of tea. [Tea json file](/public/data/teas.json) inspired by [Boonaki's Tea API](https://github.com/boonaki/boonakis-tea-api).
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Displays details of a random tea
+- Has a button that allows users to get a new random tea
+- Lists out all tea options
 
-## React Compiler
+## Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[![React.js]][React-url] [![Vite]][Vite-url] [![Typscript][Typscript]][Typscript-url] [![Tailwindcss][tailwindcss]][tailwindcss-url] [![TanstackQuery]][TanstackQuery-url] [![Wouter]][Wouter-url]
 
-## Expanding the ESLint configuration
+<!-- GETTING STARTED -->
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting Started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+To get a local copy up and running follow these simple example steps.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+This is an example of how to list things you need to use the software and how to install them.
+
+- pnpm
+  ```sh
+  npm install pnpm@latest -g
+  ```
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/JMixson/tea-discovery.git
+   ```
+2. Install PNPM packages
+   ```sh
+   pnpm install
+   ```
+
+### Usage
+
+To start the application, run:
+
+```sh
+pnpm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+<!-- MARKDOWN LINKS & IMAGES -->
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Vite]: https://img.shields.io/badge/Vite-20232A?style=for-the-badge&logo=vite
+[Vite-url]: https://vitejs.dev/
+[Typscript]: https://img.shields.io/badge/Typescript-20232A?style=for-the-badge&logo=typescript&logoColor=3178c6
+[Typscript-url]: https://www.typescriptlang.org
+[Tailwindcss]: https://img.shields.io/badge/Tailwindcss-20232A?style=for-the-badge&logo=tailwindcss&logoColor=20c4ff
+[Tailwindcss-url]: https://tailwindcss.com
+[TanstackQuery]: https://img.shields.io/badge/-TanstackQuery-20232A?style=for-the-badge&logo=reactquery&logoColor=fb2c36
+[TanstackQuery-url]: https://tanstack.com/query/latest
+[Wouter]: https://img.shields.io/badge/-Wouter-20232A?style=for-the-badge
+[Wouter-url]: https://github.com/molefrog/wouter

@@ -22,3 +22,13 @@ export function useTeaById(id: string) {
 
   return { tea, ...rest };
 }
+
+export function useRandomTeaId() {
+  const { data: teas } = useTeas();
+
+  if (!teas || teas.length === 0) return 0;
+
+  const randomNum = Math.floor(Math.random() * teas.length);
+
+  return teas[randomNum].id;
+}

@@ -5,7 +5,9 @@ function ScrollToTop() {
   const [location] = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (location.startsWith("/tea/")) {
+      window.scrollTo(0, 0);
+    }
   }, [location]);
   return null;
 }

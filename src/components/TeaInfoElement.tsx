@@ -1,7 +1,13 @@
-import type { TeaDetails } from "../types";
+import { useTeaById } from "../hooks/useTeas";
 import { capitalize } from "../util/formatText";
 
-function TeaInfoElement({ tea }: { tea: TeaDetails }) {
+function TeaInfoElement({ id }: { id: string }) {
+  const { tea, error, isLoading } = useTeaById(id);
+
+  if (isLoading) return "Loading...";
+
+  if (error) return "An error has occurred: " + error.message;
+
   return (
     <div className="grid grid-cols-2 gap-3 p-4">
       <h1 className="text-4xl">{tea.name}</h1>

@@ -2,6 +2,8 @@
 
 A web app that allows users to discover and learn more about different types of tea. [Tea json file](/public/data/teas.json) inspired by [Boonaki's Tea API](https://github.com/boonaki/boonakis-tea-api).
 
+![Alt text](screenshot.png)
+
 ## Features
 
 - Displays details of a random tea

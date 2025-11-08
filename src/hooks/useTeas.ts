@@ -11,6 +11,8 @@ export function useTeas() {
       return await response.json();
     },
     staleTime: Infinity,
+    refetchOnMount: false,
+    refetchOnWindowFocus: false,
   });
 }
 

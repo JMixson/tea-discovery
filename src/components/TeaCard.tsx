@@ -7,7 +7,7 @@ function TeaCard({ id, name, image }: Tea) {
     <article className="w-full rounded-md border border-gray-200 bg-white shadow-sm hover:shadow-none">
       <Link href={`/tea/${id}`}>
         <img
-          className="h-64 w-full rounded-t-md object-cover"
+          className="block h-64 w-full rounded-t-md object-cover"
           src={image}
           alt={name}
           loading="lazy"

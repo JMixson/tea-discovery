@@ -20,9 +20,9 @@ function App() {
   }
 
   return (
-    <div className="my-14 flex flex-col items-center">
+    <div className="flex flex-col items-center p-3 lg:my-14">
       <ScrollToTop />
-      <div className="bg-brown min-h-80 w-7xl content-center rounded-md">
+      <div className="bg-brown w-full max-w-7xl content-center rounded-md sm:min-h-80">
         {isHome && <StarterElement />}
 
         {isTeaDetails && <TeaInfoElement id={params.id} />}

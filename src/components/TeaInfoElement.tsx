@@ -9,9 +9,9 @@ function TeaInfoElement({ id }: { id: string }) {
   if (error) return "An error has occurred: " + error.message;
 
   return (
-    <div className="grid grid-cols-2 gap-3 p-4">
+    <div className="grid gap-3 p-4 sm:grid-cols-2">
       <h1 className="text-4xl">{tea.name}</h1>
-      <h2 className="justify-self-end text-2xl">Origin: {tea.origin}</h2>
+      <h2 className="text-2xl sm:justify-self-end">Origin: {tea.origin}</h2>
 
       <img
         className="h-96 w-full rounded-md object-cover"

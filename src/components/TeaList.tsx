@@ -11,7 +11,7 @@ function TeaList() {
 
   return (
     <>
-      <section className="grid w-7xl grid-cols-4 gap-5">
+      <section className="grid gap-2 sm:grid-cols-2 lg:w-7xl lg:grid-cols-4 lg:gap-5">
         {teas.map((tea: Tea) => (
           <TeaCard key={tea.id} id={tea.id} name={tea.name} image={tea.image} />
         ))}

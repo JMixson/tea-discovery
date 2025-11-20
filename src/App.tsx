@@ -19,6 +19,8 @@ function App() {
     }
   }
 
+  if (!randomTea) navigate("/");
+
   return (
     <div className="flex flex-col items-center p-3 lg:my-14">
       <ScrollToTop />

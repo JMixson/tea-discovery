@@ -33,6 +33,14 @@ function App() {
       </button>
 
       <TeaList />
+
+      <footer className="m-10">
+        All images and tea content are sourced from{" "}
+        <a href="https://www.wikipedia.org" target="_blank">
+          Wikimedia Foundation
+        </a>
+        .
+      </footer>
     </div>
   );
 }

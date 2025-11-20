@@ -1,6 +1,6 @@
 # Tea Discovery App
 
-A web app that allows users to discover and learn more about different types of tea. [Tea json file](/public/data/teas.json) inspired by [Boonaki's Tea API](https://github.com/boonaki/boonakis-tea-api).
+A web app that allows users to discover and learn more about different types of tea. [Tea json file](/public/data/teas.json) inspired by [Boonaki's Tea API](https://github.com/boonaki/boonakis-tea-api). All images and tea content are sourced from [Wikimedia Foundation](https://www.wikipedia.org).
 
 ![Alt text](screenshot.png)
 

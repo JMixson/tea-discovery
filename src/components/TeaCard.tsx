@@ -1,4 +1,3 @@
-import { memo } from "react";
 import type { Tea } from "../types";
 import { Link } from "wouter";
 
@@ -21,4 +20,4 @@ function TeaCard({ id, name, image }: Tea) {
   );
 }
 
-export default memo(TeaCard);
+export default TeaCard;
